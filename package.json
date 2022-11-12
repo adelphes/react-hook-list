@@ -1,0 +1,38 @@
+{
+  "name": "react-hook-list",
+  "version": "1.0.0",
+  "description": "Simple react-hook utilities",
+  "keywords": ["react hooks", "react"],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "Readme.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "clean": "rimraf build",
+    "lint": "eslint . --ext .ts",
+    "start": "node ./build/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/react": "*",
+    "@typescript-eslint/eslint-plugin": "^5",
+    "@typescript-eslint/parser": "^5",
+    "eslint": "^8",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "rimraf": "*",
+    "ts-node": "^10",
+    "typescript": "^4"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "axios": "^1"
+  }
+}
