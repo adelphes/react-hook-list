@@ -1,6 +1,6 @@
 {
   "name": "react-hook-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple react-hook utilities",
   "keywords": ["react hooks", "react"],
   "main": "build/index.js",

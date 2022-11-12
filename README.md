@@ -75,7 +75,8 @@ useInterval(null, 2000);
 Simple Clock
 
 ```tsx
-import { useTimeout } from 'react-hook-list';
+import React from 'react';
+import { useInterval } from 'react-hook-list';
 
 export const SimpleClock = () => {
   useInterval(null, 1000);
