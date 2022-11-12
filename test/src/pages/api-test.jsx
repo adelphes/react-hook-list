@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useRef } from 'react';
-import { useGetRequest } from 'react-hook-list';
+import { useAPI } from 'react-hook-list';
 
-function GetRequest() {
+function APITest() {
   const renderCount = useRef(0);
   renderCount.current += 1;
   const [page, setPage] = useState(1);
   const [badURL, setBadURL] = useState(false);
-  const [data, err, isLoading, refresh] = useGetRequest(
+  const [data, err, isLoading, refresh] = useAPI(
     badURL
       ? 'https://abadurltogoto.com'
       : `https://reqres.in/api/users?page=${page}`
@@ -20,14 +20,10 @@ function GetRequest() {
       <button onClick={() => setPage((p) => p + 1)}>next page</button>
       <button onClick={() => setBadURL((x) => !x)}>toggle bad url</button>
       {isLoading && <div>Loading...</div>}
-      {data !== undefined && (
-        <div>
-          {JSON.stringify(data, undefined, ' ')}
-        </div>
-      )}
+      {data !== undefined && <div>{JSON.stringify(data, undefined, ' ')}</div>}
       {err && <div>{err.toString()}</div>}
     </>
   );
 }
 
-export default GetRequest;
+export default APITest;

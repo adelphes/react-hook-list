@@ -1,7 +1,7 @@
 import './App.css';
 import Timeout from './pages/timeout';
 import Interval from './pages/interval';
-import GetRequest from './pages/get-request';
+import APITest from './pages/api-test';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <Timeout />
         <Interval />
-        <GetRequest />
+        <APITest />
       </header>
     </div>
   );
