@@ -1,11 +1,14 @@
 {
   "name": "react-hook-list",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple react-hook utilities",
   "keywords": [
     "react hooks",
     "react"
   ],
+  "repository": {
+    "url": "https://github.com/adelphes/react-hook-list"
+  },
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
